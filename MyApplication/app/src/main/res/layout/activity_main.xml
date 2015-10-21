@@ -27,7 +27,7 @@
             android:id="@+id/conditionImageView"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.30"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
         <TextView
             android:layout_width="match_parent"
@@ -38,7 +38,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.30"
             android:gravity="center_horizontal|top"
-            android:visibility="gone" />
+            android:visibility="visible" />
 
         <ListView
             android:layout_width="match_parent"
@@ -52,6 +52,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tenDayForecastListView"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/locationTextView"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/lastUpdatedTextView"
             android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
