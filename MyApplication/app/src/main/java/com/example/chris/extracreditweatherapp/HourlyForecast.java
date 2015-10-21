@@ -3,9 +3,9 @@ package com.example.chris.extracreditweatherapp;
 /**
  * Created by Chris on 10/21/15.
  */
-public class TenDayForeCast {
-    String temperature;
+public class HourlyForecast {
     String time;
+    String temperature;
     int icon;
 
     public String getTime() {
@@ -16,6 +16,13 @@ public class TenDayForeCast {
         this.time = time;
     }
 
+    public String getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
+    }
 
     public int getIcon() {
         return icon;
@@ -25,11 +32,4 @@ public class TenDayForeCast {
         this.icon = icon;
     }
 
-    public String getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(String temperature) {
-        this.temperature = temperature;
-    }
 }
