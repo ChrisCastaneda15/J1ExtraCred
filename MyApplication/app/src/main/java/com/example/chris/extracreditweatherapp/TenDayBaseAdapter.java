@@ -13,10 +13,10 @@ import java.util.ArrayList;
 /**
  * Created by Chris on 10/21/15.
  */
-public class hourlyBaseAdapter extends BaseAdapter {
+public class TenDayBaseAdapter extends BaseAdapter {
 
     Context mContext;
-    ArrayList<HourlyForecast> forecasts;
+    ArrayList<TenDayForecast> forecasts;
     private static final int ID_CONSTANT = 0x01000000;
 
 
@@ -50,13 +50,13 @@ public class hourlyBaseAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if(convertView == null){
-            convertView = LayoutInflater.from(mContext).inflate(R.layout.hourlylayout,parent,false);
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.tendaylayout,parent,false);
         }
 
-        HourlyForecast item = (HourlyForecast) getItem(position);
+        TenDayForecast item = (TenDayForecast) getItem(position);
 
 
-        ((TextView)convertView.findViewById(R.id.timeTextView)).setText(item.getTime());
+        ((TextView)convertView.findViewById(R.id.timeTextView)).setText(item.getDate());
         ((TextView)convertView.findViewById(R.id.temperatureTextView)).setText(item.getTemperature());
         ((ImageView)convertView.findViewById(R.id.iconImageView)).setImageResource(item.getIcon());
 

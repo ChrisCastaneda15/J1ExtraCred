@@ -3,7 +3,7 @@ package com.example.chris.extracreditweatherapp;
 /**
  * Created by Chris on 10/21/15.
  */
-public class HourlyForecast {
+public class TenDayForeCast {
     String temperature;
     String time;
     int icon;
