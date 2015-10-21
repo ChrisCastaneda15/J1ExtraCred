@@ -43,9 +43,16 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listView"
+            android:id="@+id/hourlyListView"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.30" />
+            android:layout_weight="0.30"
+            android:visibility="gone" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenDayForecastListView"
+            android:layout_gravity="center_horizontal" />
     </LinearLayout>
 
 </RelativeLayout>
