@@ -19,6 +19,11 @@ public class hourlyBaseAdapter extends BaseAdapter {
     ArrayList<HourlyForecast> forecasts;
     private static final int ID_CONSTANT = 0x01000000;
 
+    public hourlyBaseAdapter(Context con, ArrayList<HourlyForecast> fore) {
+        mContext = con;
+        forecasts = fore;
+    }
+
 
     @Override
     public int getCount() {

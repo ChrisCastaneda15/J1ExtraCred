@@ -32,4 +32,9 @@ public class HourlyForecast {
         this.icon = icon;
     }
 
+    public HourlyForecast(String time, String temperature, int icon) {
+        this.time = time;
+        this.temperature = temperature;
+        this.icon = icon;
+    }
 }

@@ -32,4 +32,9 @@ public class TenDayForecast {
         this.icon = icon;
     }
 
+    public TenDayForecast(String date, String temperature, int icon) {
+        this.date = date;
+        this.temperature = temperature;
+        this.icon = icon;
+    }
 }
