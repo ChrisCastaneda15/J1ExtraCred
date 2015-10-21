@@ -17,8 +17,12 @@ public class TenDayBaseAdapter extends BaseAdapter {
 
     Context mContext;
     ArrayList<TenDayForecast> forecasts;
-    private static final int ID_CONSTANT = 0x01000000;
+    private static final int ID_CONSTANT = 0x01000001;
 
+    public TenDayBaseAdapter(Context con, ArrayList<TenDayForecast> fore) {
+        mContext = con;
+        forecasts = fore;
+    }
 
     @Override
     public int getCount() {
