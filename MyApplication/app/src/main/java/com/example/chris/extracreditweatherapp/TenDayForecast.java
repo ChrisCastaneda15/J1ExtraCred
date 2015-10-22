@@ -6,7 +6,7 @@ package com.example.chris.extracreditweatherapp;
 public class TenDayForecast {
     String date;
     String temperature;
-    int icon;
+    String icon;
 
     public String getDate() {
         return date;
@@ -24,15 +24,15 @@ public class TenDayForecast {
         this.temperature = temperature;
     }
 
-    public int getIcon() {
+    public String getIcon() {
         return icon;
     }
 
-    public void setIcon(int icon) {
+    public void setIcon(String icon) {
         this.icon = icon;
     }
 
-    public TenDayForecast(String date, String temperature, int icon) {
+    public TenDayForecast(String date, String temperature, String icon) {
         this.date = date;
         this.temperature = temperature;
         this.icon = icon;
